@@ -1,0 +1,1066 @@
+{
+	"info": {
+		"_postman_id": "7ecd5205-aa86-4a6a-a7e1-9fdb387b7912",
+		"name": "TEST JAVA Development",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20807361"
+	},
+	"item": [
+		{
+			"name": "Carrera tecnica API",
+			"item": [
+				{
+					"name": "01 - Listar carreras tecnicas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1Njk4OTQzOSwibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiIzMGYxNDQxYy1kYjFmLTQ0NTAtODI4OC1jNzZiYjU4M2QyMjIiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.w_hvus3krqnPKlI7SVbpu1K1uYIYuhhbevCRNx0u0-4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/carreras-tecnicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"carreras-tecnicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Mostrar carrera tecnica por id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1Njc5NTI4NCwibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI2MzUxOTY2Mi00YjQ1LTQ2Y2QtYjZiMC1kYWZjNTQ2MGVhYWQiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.sFUgQidXcvWsFQuv_DooY09TvZo4DhoE9zz6t-j8QE4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/carreras-tecnicas/64923b23-ad3a-11ec-a403-0242ac110002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"carreras-tecnicas",
+								"64923b23-ad3a-11ec-a403-0242ac110002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Guardar carrera tecnica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carreraTecnica\":\"Desarrollador FrontEnd en REACT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/carreras-tecnicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"carreras-tecnicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Actualizar carrera tecnica por id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carreraTecnica\":\"Administrador de base de datos SQL Server\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/carreras-tecnicas/be6e2f60-edd7-11ec-97ee-0242ac110002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"carreras-tecnicas",
+								"be6e2f60-edd7-11ec-97ee-0242ac110002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Eliminar carrera tecnica por id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/carreras-tecnicas/be6e2f60-edd7-11ec-97ee-0242ac110002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"carreras-tecnicas",
+								"be6e2f60-edd7-11ec-97ee-0242ac110002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Listar carreras por paginas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/carreras-tecnicas/page/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"carreras-tecnicas",
+								"page",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Alumno API",
+			"item": [
+				{
+					"name": "01 - Listar alumnos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/alumnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Mostra alumno por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/alumnos/20220001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"alumnos",
+								"20220001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Guardar alumno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"carne\": \"20220031\",\r\n        \"apellidos\": \"Sofia Maria\",\r\n        \"nombres\": \"Reyes\",\r\n        \"direccion\": \"Zona 22\",\r\n        \"telefono\": \"11112222\",\r\n        \"email\": \"sofia@gmail.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/alumnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Actualizar alumno por id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"carne\": \"20220030\",\r\n        \"apellidos\": \"Paola\",\r\n        \"nombres\": \"Martinez\",\r\n        \"direccion\": \"Zona 12\",\r\n        \"telefono\": \"33334444\",\r\n        \"email\": \"paola@gmail.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/alumnos/20220030",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"alumnos",
+								"20220030"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Eliminar alumno por id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/alumnos/20220030",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"alumnos",
+								"20220030"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Listar alumnos por pagina",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1NzA4NDQzNSwibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI3OTJkMzQ5ZS05OGVjLTQ1NjUtOGQ3MS00YzUxNDZmNDBlZWEiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.JE4Y5CS4QCxhfkp6HIYIHbeX-gYh9dYu7Yh-NKpdTbU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/alumnos/page/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"alumnos",
+								"page",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cargo API",
+			"item": [
+				{
+					"name": "01 - Listar cargos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/cargos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"cargos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Mostrar cargo por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/cargos/3a91da2c-ad40-11ec-a403-0242ac110002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"cargos",
+								"3a91da2c-ad40-11ec-a403-0242ac110002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Guardar nuevo cargo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"descripcion\": \"Pago unico de parqueo\",\r\n        \"prefijo\": \"PUDP\",\r\n        \"monto\": 200.0,\r\n        \"genera_mora\": true,\r\n        \"porcentaje_mora\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/cargos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"cargos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Actualizar cargo por id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cargoId\": \"72163663-ea47-4041-855b-02c6fcd9a6a7\",\r\n        \"descripcion\": \"Pago unico salon\",\r\n        \"prefijo\": \"PUDS\",\r\n        \"monto\": 2002.0,\r\n        \"genera_mora\": false,\r\n        \"porcentaje_mora\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/cargos/72163663-ea47-4041-855b-02c6fcd9a6a7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"cargos",
+								"72163663-ea47-4041-855b-02c6fcd9a6a7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Eliminar cargo por id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/cargos/72163663-ea47-4041-855b-02c6fcd9a6a7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"cargos",
+								"72163663-ea47-4041-855b-02c6fcd9a6a7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Listar cargo por pagina",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1NzA4Njk1Miwibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI0NDA5YWVmZS04YjAzLTQzMTUtOGYxOC04YzQxYTg2MWM5OWQiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.qtxRu4-AYKz6zb7mFVJf1NkKr1Zt0lT9XbaMBDAwVmQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/cargos/page/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"cargos",
+								"page",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aspirante API",
+			"item": [
+				{
+					"name": "01 - Listar aspirantes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1NzA4NzQ5OCwibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiIyNWE0MGJjMS1mNjI2LTRmMjMtYTU0Yi05NDBkMDc2MjI1ZDAiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.XUi13Oxq4c7xVu3yGJLm2775H-pI3eR76fpLAWAmcn0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/aspirantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"aspirantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Mostrar aspirante por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/aspirantes/EXP-20220001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"aspirantes",
+								"EXP-20220001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Guardar aspirante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"noExpediente\": \"EXP-20220004\",\r\n    \"apellidos\": \"Chinchilla\",\r\n    \"nombres\": \"Ermes Antonio\",\r\n    \"direccion\": \"Zona 10\",\r\n    \"telefono\": \"33332222\",\r\n    \"email\": \"ermes@gmail.com\",\r\n    \"estatus\": \"No asignado\",\r\n    \"examenAdmision\": {\r\n        \"examenId\": \"17abcdbf-ad3b-11ec-a403-0242ac110002\"\r\n    },\r\n    \"jornada\": {\r\n        \"jornadaId\": \"6485cbfd-ad3a-11ec-a403-0242ac110002\"\r\n    },\r\n    \"carreraTecnica\": {\r\n        \"carreraId\": \"64923b23-ad3a-11ec-a403-0242ac110002\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/aspirantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"aspirantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Actualizar aspirante por id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"noExpediente\": \"EXP-20220004\",\r\n        \"apellidos\": \"Fonseca\",\r\n        \"nombres\": \"Joel\",\r\n        \"direccion\": \"Zona 7\",\r\n        \"telefono\": \"66667777\",\r\n        \"email\": \"joel@gmail.com\",\r\n        \"estatus\": \"No asignado\",\r\n        \"examenAdmision\": {\r\n            \"examenId\": \"17abcdbf-ad3b-11ec-a403-0242ac110002\"\r\n        },\r\n        \"jornada\": {\r\n            \"jornadaId\": \"6485cbfd-ad3a-11ec-a403-0242ac110002\"\r\n        },\r\n        \"carreraTecnica\": {\r\n            \"carreraId\": \"01bb1bfa-a031-4828-b842-9e9e270dcfc7\"\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/aspirantes/EXP-20220004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"aspirantes",
+								"EXP-20220004"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Eliminar aspirante por id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/aspirantes/EXP-20220004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"aspirantes",
+								"EXP-20220004"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Listar aspirantes por pagina",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1NzA4NzQ5OCwibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiIyNWE0MGJjMS1mNjI2LTRmMjMtYTU0Yi05NDBkMDc2MjI1ZDAiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.XUi13Oxq4c7xVu3yGJLm2775H-pI3eR76fpLAWAmcn0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/aspirantes/page/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"aspirantes",
+								"page",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Examen admision API",
+			"item": [
+				{
+					"name": "01 - Listar examenes de admision",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/examenes-admision",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"examenes-admision"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Mostrar examen por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/examenes-admision/d5e0fa95-c354-11ec-8b92-0242ac110002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"examenes-admision",
+								"d5e0fa95-c354-11ec-8b92-0242ac110002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Guardar examen de admision",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaExamen\":\"2022-06-17 04:14:32\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/examenes-admision",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"examenes-admision"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Actualizar examen de admision",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaExamen\":\"2002-10-10 10:10:10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/examenes-admision/ef3e6e1d-e9b8-4c12-b22f-e55139b1f85b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"examenes-admision",
+								"ef3e6e1d-e9b8-4c12-b22f-e55139b1f85b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Elminar examen de admision por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/examenes-admision/ef3e6e1d-e9b8-4c12-b22f-e55139b1f85b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"examenes-admision",
+								"ef3e6e1d-e9b8-4c12-b22f-e55139b1f85b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Listar examenes de admision por pagina",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1NzA4ODQ5Mywibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiJjZmNhYzViZi1mMDI1LTQxMmYtYThlMi1hNWI5ZjdkMGJjOWIiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.e8BrIm4fyEqrRJalznuPEL4gAxvZSp3Icm_tJFIJWcM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/examenes-admision/page/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"examenes-admision",
+								"page",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inscripcion API",
+			"item": [
+				{
+					"name": "01 - Listar inscripciones",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1NzA4MjkxMCwibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI1OWViYzUyZC04NjQ0LTQxNTktYjVkYy1kZDJjNGQyNWIwMGIiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.1mrjDe_1KrHSos2r2-lSo0N6zgNXOtm7uDEzpp0lxcw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/inscripciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"inscripciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Inscribirse",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1Njk4OTQzOSwibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiIzMGYxNDQxYy1kYjFmLTQ0NTAtODI4OC1jNzZiYjU4M2QyMjIiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.w_hvus3krqnPKlI7SVbpu1K1uYIYuhhbevCRNx0u0-4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carreraId\":\"64923b23-ad3a-11ec-a403-0242ac110002\",\r\n    \"ciclo\":2022,\r\n    \"noExpediente\":\"EXP-20220001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/inscripciones/enrollment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"inscripciones",
+								"enrollment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Listar inscripciones por pagina",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1NzA4ODA5Niwibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI1MzQyMTRhZS0zYTI0LTQ5NzEtYWY1My03ODNjNzdkZjA5ZjMiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.5jgR5VBLJ0kMicR1jUaGCHc0SoHD9fDpB_xUOwd8DfM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/inscripciones/page/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"inscripciones",
+								"page",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "01 - Solicitar token de acceso",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "kalum-app",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "jHub",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/oauth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jornada API",
+			"item": []
+		},
+		{
+			"name": "Inversion carrera tecnica API",
+			"item": [
+				{
+					"name": "01 - Listar inversiones de carreras tecnicas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGVsbGlkb3MiOiJIdWIiLCJ1c2VyX25hbWUiOiJqSHViIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY1NzA5MTA2Mywibm9tYnJlIjoiSm9zZSBBcm1hbmRvIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiIxODBjOWQ3ZC0zYWQ1LTQ0MTMtYWMzMS02OGZhYWUyMTFhMDYiLCJlbWFpbCI6ImFybWFuZG9AZ21haWwuY29tIiwiY2xpZW50X2lkIjoia2FsdW0tYXBwIn0.vl903RUjRlnwzeol9yRmf6Pi10HyCGTYLaWrrnG4Rwc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/kalum-management/v1/inversion-carrera-tecnica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"kalum-management",
+								"v1",
+								"inversion-carrera-tecnica"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
